@@ -36,9 +36,9 @@ jobs:
 
       - name: Build Kernel
         run: |
-          chmod +x ./build_kernel.sh
+          chmod +x ./compile.sh
           # The script is assumed to place Image.gz in arch/arm64/boot/
-          ./build_kernel.sh
+          ./compile.sh guamp
 
       - name: Package Kernel to Flashable Zip 📦
         run: |
