@@ -21,4 +21,4 @@ jobs:
     - name: Building
       run: |
         sudo apt install device-tree-compiler -y
-        bash build.sh
+        bash compile.sh guamp
