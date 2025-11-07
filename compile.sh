@@ -39,7 +39,7 @@ build_clang() {
 make vendor/sunburn-$1_defconfig ARCH=arm64 O=out CC=clang
 build_clang
 
-else
+if [ $? -ne 0 ]; then
     echo "The kernel has failed to compile. Please check the terminal output for further details."
     exit 1
 fi
